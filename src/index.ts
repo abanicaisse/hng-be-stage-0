@@ -27,9 +27,14 @@ interface ApiResponse {
   fact: string;
 }
 
+interface CatFactResponse {
+  fact: string;
+  length: number;
+}
+
 const fetchCatFact = async (): Promise<string> => {
   try {
-    const { data } = await axios.get(CAT_FACT_API, { timeout: 5000 });
+    const { data } = await axios.get<CatFactResponse>(CAT_FACT_API, { timeout: 5000 });
     return data.fact || FALLBACK_FACT;
   } catch {
     return FALLBACK_FACT;
