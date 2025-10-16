@@ -31,7 +31,7 @@ A TypeScript Express API that returns profile information with random cat facts.
    ```bash
    git clone https://github.com/abanicaisse/hng-be-stage-0.git
 
-   cd be-stage-0
+   cd hng-be-stage-0
    ```
 
 2. **Install dependencies**
